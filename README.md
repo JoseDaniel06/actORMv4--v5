@@ -69,8 +69,13 @@ BEGIN
 END;
 /
 ```
+***
 6. Probablemente saldrán errores de tablespace, tabla, vista o campo que ya existe porque se está realizando una actualización de versión por lo cual no es un error.
+***
 7. Si en la ejecución sale un error de primary key es la misma situación del punto anterior. Por lo que en este paso se recomienda (insertar script que valide objetos existentes y solo inserte los que no existen).
+***
 8. Por último se realiza la instalación del paquete v4.2.0.4 ----Validar
+***
 9. Como nota adicional se debe tener en cuenta que la instalación debe ser en el siguiente orden 01 luego 02 ... y así sucesivamente.
+***
 10. En este paso se deben validar que todos los scripts estén compilados correctamente, uno seguido del otro.
